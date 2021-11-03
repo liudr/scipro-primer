@@ -15,5 +15,8 @@ def read_densities(filename):
     return densities
 
 densities = read_densities('densities.dat')
-from scitools.pprint2 import pprint
-pprint(densities)
+# from scitools.pprint2 import pprint # Python 2
+# pprint(densities)
+
+import pprint # Python 3
+pprint.pprint(densities)
